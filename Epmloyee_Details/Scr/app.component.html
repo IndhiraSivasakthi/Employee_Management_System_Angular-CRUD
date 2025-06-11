@@ -1,0 +1,55 @@
+<div class="page-wrapper">
+  <div class="container">
+    <h1>Employee Management</h1>
+
+    <form (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        placeholder="Name"
+        [(ngModel)]="formData.name"
+        name="name"
+        required
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        [(ngModel)]="formData.email"
+        name="email"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Phone"
+        [(ngModel)]="formData.phone"
+        name="phone"
+        required
+      />
+      <button type="submit">{{ isEditMode ? 'Update' : 'Add' }} Employee</button>
+      <button type="button" class="clear-btn" (click)="resetForm()">Clear</button>
+    </form>
+
+    <hr />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employees">
+          <td>{{ emp.name }}</td>
+          <td>{{ emp.email }}</td>
+          <td>{{ emp.phone }}</td>
+          <td>
+            <button class="edit-btn" (click)="onEdit(emp)">Edit</button>
+            <button class="delete-btn" (click)="onDelete(emp.id!)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
