@@ -1,30 +1,40 @@
 # 🧑‍💼 Employee Management System - Angular
 
-A simple yet powerful CRUD (Create, Read, Update, Delete) application built using **Angular**. This project demonstrates essential Angular concepts such as data binding, component interaction, form handling, and dynamic table rendering.
+A CRUD (Create, Read, Update, Delete) application built using **Angular** and **JSONPlaceholder API**. This project showcases core Angular concepts like data binding, component interaction, form handling, HTTP requests, and dynamic table rendering.
 
 ## 🚀 Features
 
-- ✅ **Add Employee**: Add new employees by entering name, email, and phone number.
-- 🔁 **Update Employee**: Edit existing employee details with instant form population.
-- ❌ **Delete Employee**: Remove an employee from the list.
-- 🧹 **Clear Form**: Reset all input fields using a clear button.
-- 📊 **Display Table**: Structured table format to view employee details.
-- 📱 **Responsive Design**: Works seamlessly across desktop and mobile screens.
+- ✅ **Add Employee**: Add a new employee using form input.
+- 🔁 **Update Employee**: Instantly populate form to edit an employee's details.
+- ❌ **Delete Employee**: Remove an employee using the API.
+- 🧹 **Clear Form**: Reset all input fields in one click.
+- 📊 **Employee Table**: View all employees in a structured, scrollable table.
+- 📱 **Responsive UI**: Works smoothly on desktops, tablets, and mobile devices.
+
+## 🌐 API Integration
+
+This project uses the free [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users) to perform HTTP operations:
+
+- **GET** `/users` – Fetch list of users
+- **POST** `/users` – Add a new user
+- **PUT** `/users/:id` – Update a user
+- **DELETE** `/users/:id` – Delete a user
+
+> ⚠️ JSONPlaceholder is a mock API, so POST/PUT/DELETE won't permanently modify the backend but will return simulated success responses.
 
 ## 🛠️ Tech Stack
 
-| Technology | Description                |
-|------------|----------------------------|
-| Angular    | Frontend framework         |
-| TypeScript | Application logic          |
-| HTML/CSS   | Markup and custom styling  |
-| In-Memory  | Array to store data        |
-
-> ⚠️ No backend API – data is stored temporarily in an in-memory array.
+| Technology     | Description                    |
+|----------------|--------------------------------|
+| Angular        | Frontend Framework             |
+| TypeScript     | Programming Language           |
+| HTML/CSS       | UI Structure & Styling         |
+| JSONPlaceholder | Mock REST API for testing     |
+| RxJS & HttpClient | Angular HTTP operations     |
 
 ## 📸 Screenshots
 
-_(Add screenshots here if available, e.g., form UI, table UI, mobile view)_
+_(Add UI screenshots here: form, table, mobile view)_
 
 ## 📁 Project Structure
 
