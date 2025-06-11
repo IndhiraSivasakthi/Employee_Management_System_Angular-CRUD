@@ -33,9 +33,8 @@ This project uses the free [JSONPlaceholder API](https://jsonplaceholder.typicod
 | RxJS & HttpClient | Angular HTTP operations     |
 
 
-🧑‍💻 Developer Notes
-Uses Angular’s HttpClient to perform asynchronous HTTP operations.
+## 🧑‍💻 Developer Notes
 
-Clean separation of concerns: UI logic in components, API logic in services, types in models.
-
-Easily extensible to integrate a real backend in place of JSONPlaceholder.
+1.Uses Angular’s HttpClient to perform asynchronous HTTP operations.
+2.Clean separation of concerns: UI logic in components, API logic in services, types in models.
+3.Easily extensible to integrate a real backend in place of JSONPlaceholder.
