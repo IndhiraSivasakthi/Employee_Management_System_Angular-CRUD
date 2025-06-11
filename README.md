@@ -33,22 +33,9 @@ This project uses the free [JSONPlaceholder API](https://jsonplaceholder.typicod
 | RxJS & HttpClient | Angular HTTP operations     |
 
 
-## 📁 Project Structure
+🧑‍💻 Developer Notes
+Uses Angular’s HttpClient to perform asynchronous HTTP operations.
 
-src/
-│
-├── app/
-│   │
-│   ├── services/
-│   │   └── employee.service.ts      // Handles HTTP operations (can be extended for real APIs)
-│   │
-│   ├── models/
-│   │   └── employee.model.ts        // Defines the Employee data structure (TypeScript interface/class)
-│   │
-│   ├── app.component.html           // Main HTML layout for the employee management system
-│   ├── app.component.ts             // Main TypeScript logic (Add, Update, Delete, Clear functions)
-│   ├── app.component.css            // Styling for the entire app (form, table, buttons)
-│   ├── app.module.ts                // Declares all components and services used in the app
-│   └── app-routing.module.ts         // Optional (if routing is implemented)
+Clean separation of concerns: UI logic in components, API logic in services, types in models.
 
-
+Easily extensible to integrate a real backend in place of JSONPlaceholder.
